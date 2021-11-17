@@ -1,0 +1,47 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+        </div>
+        <div class="col-6">
+            <form>
+                <div class="row mt-2">
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="newUser.userId" class="form-control bg-dark text-white border-light" id="userId" name="userId" placeholder="User ID">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="newUser.firstName" class="form-control bg-dark text-white border-light" id="firstName" name="firstName" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="row mt-2">      
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="newUser.lastName" class="form-control bg-dark text-white border-light" id="lastName" name="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="form-group">
+                        <input type="email" [(ngModel)]="newUser.emailAddress" class="form-control bg-dark text-white border-light" id="emailAddress" name="emailAddress" aria-describedby="emailHelp" placeholder="Email Address">
+                    </div>    
+                </div>
+                <div class="row mt-2">
+                    <div class="form-group">
+                        <input type="password" [(ngModel)]="newUser.password" class="form-control bg-dark text-white border-light" id="password" name="password" placeholder="Password">
+                    </div>    
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-success border-light" (click)="CreateAccount()">Create Account</button>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm">
+        </div>
+    </div>
+</div>

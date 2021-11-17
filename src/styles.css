@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: radial-gradient(farthest-corner, #053749, hsl(180, 85%, 49%), rgb(255, 159, 95));
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(211, 211, 211) !important;
+    font-style: italic !important;
+    font-family: monospace;
+}

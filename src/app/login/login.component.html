@@ -1,0 +1,33 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+        </div>
+        <div class="col-6">
+            <form>
+                <div class="row mt-2">
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="userId" class="form-control bg-dark text-white border-light" id="userId" name="userId" placeholder="User ID">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="form-group">
+                        <input type="password" [(ngModel)]="password" class="form-control bg-dark text-white border-light" id="password" name="password" placeholder="Password">
+                    </div>    
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success border-light" (click)="Login()">Login</button>
+                    </div>
+                </div>
+            </form>
+            <div class="row mt-2">
+                <div class="alert alert-danger" *ngIf="badLoginError">
+                    Bad UserID or Password.
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+        </div>
+    </div>
+</div>

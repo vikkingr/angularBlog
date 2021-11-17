@@ -1,0 +1,37 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+        </div>
+        <div class="col-6">
+            <form>
+                <div class="row mt-2">      
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="newPost.title" class="form-control bg-dark text-white border-light" id="title" name="title" placeholder="Title">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="form-group">
+                        <input type="email" [(ngModel)]="newPost.content" class="form-control bg-dark text-white border-light" id="content" name="content" placeholder="Content">
+                    </div>    
+                </div>
+                <div class="row mt-2">
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="newPost.headerImage" class="form-control bg-dark text-white border-light" id="headerImage" name="headerImage" placeholder="Header Image URL">
+                    </div>    
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                    </div>
+                    <div class="col-lg">
+                        <button type="submit" class="btn btn-success border-light" (click)="CreatePost()">Create Post</button>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm">
+        </div>
+    </div>
+</div>

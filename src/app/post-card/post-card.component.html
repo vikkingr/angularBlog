@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header text-white bg-secondary">
+        {{currentPost!.title}}
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>{{currentPost!.content}}</p>
+            <footer class="blockquote-footer"><cite title="userId">{{currentPost!.userId}}</cite></footer>
+        </blockquote>
+        <a class="btn btn-danger" (click)="DeletePost()" *ngIf="currentPost && currentPost.userId==userId">Delete</a>
+        <a class="btn btn-warning" (click)="EditPost()" *ngIf="currentPost && currentPost.userId==userId">Edit</a>
+    </div>
+</div>
