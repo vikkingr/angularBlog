@@ -11,6 +11,7 @@ import { PostService } from '../services/post.service';
 export class EditPostComponent implements OnInit {
 
   editedPost: PostRequest = new PostRequest();
+
   postId: number | undefined;
 
   constructor(private postService: PostService, private activatedRoute: ActivatedRoute) { }
@@ -18,6 +19,9 @@ export class EditPostComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {
       this.postId = params.postId;
+      this.editedPost.content = params.content;
+      this.editedPost.headerImage = params.headerImage;
+      this.editedPost.title = params.title;
     })
   }
 

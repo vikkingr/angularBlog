@@ -35,7 +35,12 @@ export class PostCardComponent implements OnInit {
 
   EditPost() {
     this.PostEdited.emit(this.currentPost?.postId);
-    this.router.navigate(['/EditPost', { postId: this.currentPost?.postId }]);
+    this.router.navigate(['/EditPost', {
+        postId: this.currentPost?.postId,
+        title: this.currentPost?.title,
+        content: this.currentPost?.content,
+        headerImage: this.currentPost?.headerImage
+      }]);
   }
 
 }
