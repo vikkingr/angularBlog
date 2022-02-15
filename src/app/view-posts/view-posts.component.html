@@ -1,7 +1,7 @@
 
-<div class="container w-50">
+<div class="container">
     <!-- Content here -->
-    <div class="container mb-3" *ngFor='let post of postsArr'>
+    <div class="container" *ngFor='let post of postsArr'>
         <app-post-card [currentPost]="post" (PostDeleted)="DeletePost($event)"></app-post-card>
     </div>
 </div>
