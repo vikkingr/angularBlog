@@ -1,5 +1,9 @@
 # Assignment4
 
+This project was for school and it's my blog's frontend! Create,edit and log into your account and create, edit and view posts! Enjoy.
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
 ## Development server
